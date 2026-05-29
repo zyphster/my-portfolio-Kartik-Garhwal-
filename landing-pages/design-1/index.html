@@ -2,43 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Landing Page Design 1</title>
+
   <style>
-    body {
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #020617, #1d4ed8);
+    }
+
+    body {
+      background: #020617;
       color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 30px 8%;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.3), transparent 35%),
+        linear-gradient(135deg, #020617, #1d4ed8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       text-align: center;
-      padding: 80px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      color: #bae6fd;
+      padding: 8px 18px;
+      border-radius: 30px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 50px;
+      font-size: 58px;
+      line-height: 1.1;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 20px;
       color: #dbeafe;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
     }
 
     a {
       background: #38bdf8;
       color: #020617;
-      padding: 15px 30px;
+      padding: 15px 28px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
-      margin-top: 20px;
+    }
+
+    .outline {
+      background: transparent;
+      color: white;
+      border: 1px solid white;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      p {
+        font-size: 17px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <h1>Landing Page Design 1</h1>
-  <p>Ye tumhara demo landing page hai. Yaha original landing page ka code paste kar sakte ho.</p>
-  <a href="../../index.html">Back To Portfolio</a>
+<section class="hero">
+  <div class="hero-content">
+    <span class="badge">Demo Landing Page</span>
+
+    <h1>Landing Page Design 1</h1>
+
+    <p>
+      Ye tumhara demo landing page hai. Yaha tum apne client ke landing page ka full HTML/CSS/JS code paste kar sakte ho.
+    </p>
+
+    <div class="buttons">
+      <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20aisa%20landing%20page%20banwana%20hai" target="_blank">
+        Order Similar Page
+      </a>
+
+      <a href="../../index.html" class="outline">
+        Back To Portfolio
+      </a>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>

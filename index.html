@@ -3,66 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Kartik Portfolio | Landing Pages, Websites & Ads</title>
+  <meta name="description" content="Portfolio of landing pages, websites, ad creatives and digital marketing work by Kartik.">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
 <header class="hero">
-  <nav>
+  <nav class="navbar">
     <h2 class="logo">Kartik<span>Portfolio</span></h2>
-    <a href="https://wa.me/916353527607" class="nav-btn" target="_blank">WhatsApp</a>
+
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20landing%20page%20banwana%20hai" class="nav-btn" target="_blank">
+      WhatsApp
+    </a>
   </nav>
 
   <div class="hero-content">
+    <span class="hero-badge">Landing Pages • Websites • Ads</span>
     <h1>High-Converting Landing Pages, Websites & Ads</h1>
-    <p>Mere best landing pages, websites, ad creatives aur digital projects yaha showcase kiye gaye hain.</p>
-    <a href="#work" class="main-btn">View My Work</a>
+    <p>
+      Yaha mere landing pages, websites, ad creatives aur digital marketing projects showcase kiye gaye hain.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#work" class="main-btn">View My Work</a>
+      <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20portfolio%20dekhkar%20kaam%20karwana%20hai" class="outline-btn" target="_blank">
+        Get Similar Design
+      </a>
+    </div>
   </div>
 </header>
 
+<section class="featured">
+  <h2>Featured Work</h2>
+
+  <div class="featured-grid">
+    <div class="featured-card">
+      <h3>Fast Delivery</h3>
+      <p>Quick landing page and website delivery for businesses.</p>
+    </div>
+
+    <div class="featured-card">
+      <h3>Mobile Responsive</h3>
+      <p>All pages are designed for mobile, tablet and desktop.</p>
+    </div>
+
+    <div class="featured-card">
+      <h3>Lead Ready</h3>
+      <p>WhatsApp CTA, lead forms and conversion-focused structure.</p>
+    </div>
+  </div>
+</section>
+
 <section class="tabs-section" id="work">
   <h2>My Work</h2>
+  <p class="section-subtitle">Filter karo aur apne pasand ka project dekho.</p>
 
   <div class="tabs">
     <button class="tab active" data-filter="all">All</button>
     <button class="tab" data-filter="landing">Landing Pages</button>
     <button class="tab" data-filter="website">Websites</button>
     <button class="tab" data-filter="ads">Ads</button>
+    <button class="tab" data-filter="video">Video Ads</button>
   </div>
+
   <input type="text" id="searchInput" placeholder="Search project..." class="search-box">
 
   <div class="projects">
 
-    <div class="card" data-category="landing">
+    <div class="card" data-category="landing" data-name="landing page design 1 business high converting">
+      <span class="badge">Landing Page</span>
       <img src="assets/images/design-1-preview.jpg" alt="Landing Page Design 1">
+
       <h3>Landing Page Design 1</h3>
-      <p>Modern high-converting landing page demo.</p>
-      <a href="landing-pages/design-1/" target="_blank">View Live</a>
+      <p>Modern high-converting landing page demo for service/business.</p>
+
+      <div class="card-buttons">
+        <a href="landing-pages/design-1/" target="_blank">View Live</a>
+        <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20aisa%20hi%20landing%20page%20banwana%20hai" target="_blank">
+          Get Similar
+        </a>
+      </div>
     </div>
 
-    <div class="card" data-category="website">
+    <div class="card" data-category="website" data-name="website design 1 business website">
+      <span class="badge">Website</span>
       <img src="assets/images/website-1-preview.jpg" alt="Website Design 1">
+
       <h3>Website Design 1</h3>
-      <p>Professional business website demo.</p>
-      <a href="websites/website-1/" target="_blank">View Live</a>
+      <p>Professional business website demo with clean UI.</p>
+
+      <div class="card-buttons">
+        <a href="websites/website-1/" target="_blank">View Live</a>
+        <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20business%20website%20banwani%20hai" target="_blank">
+          Get Similar
+        </a>
+      </div>
     </div>
 
-    <div class="card" data-category="ads">
-      <img src="assets/images/ad-1-preview.jpg" alt="Ad Creative 1">
+    <div class="card" data-category="ads" data-name="facebook ad creative instagram ad">
+      <span class="badge">Ad Creative</span>
+      <img src="assets/images/ad-1-preview.jpg" alt="Facebook Ad Creative">
+
       <h3>Facebook Ad Creative</h3>
-      <p>High attention ad creative for business growth.</p>
-      <a href="assets/images/ad-1-preview.jpg" target="_blank">View Creative</a>
+      <p>High-attention ad creative for Facebook and Instagram.</p>
+
+      <div class="card-buttons">
+        <a href="assets/images/ad-1-preview.jpg" target="_blank">View Creative</a>
+        <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20ad%20creative%20banwana%20hai" target="_blank">
+          Order Ad
+        </a>
+      </div>
     </div>
 
   </div>
 </section>
 
-<section class="contact">
-  <h2>Want A Landing Page Like This?</h2>
-  <p>DM me for landing page, website, ads and digital marketing work.</p>
-  <a href="https://wa.me/916353527607" target="_blank" class="main-btn">Contact on WhatsApp</a>
+<section class="pricing" id="pricing">
+  <h2>Pricing</h2>
+  <p class="section-subtitle">Basic starting price. Final price work ke hisab se decide hoga.</p>
+
+  <div class="pricing-grid">
+    <div class="price-card">
+      <h3>Landing Page</h3>
+      <h4>₹1999+</h4>
+      <p>Single page high-converting landing page.</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Business Website</h3>
+      <h4>₹4999+</h4>
+      <p>Professional website for business and services.</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Ad Creative</h3>
+      <h4>₹299+</h4>
+      <p>Facebook, Instagram and WhatsApp ad creatives.</p>
+    </div>
+
+    <div class="price-card">
+      <h3>Video Ad</h3>
+      <h4>₹999+</h4>
+      <p>Short video ad for reels and social media promotions.</p>
+    </div>
+  </div>
 </section>
+
+<section class="trust">
+  <h2>Why Work With Me?</h2>
+
+  <div class="trust-grid">
+    <div>✔ Fast Delivery</div>
+    <div>✔ Mobile Responsive</div>
+    <div>✔ WhatsApp Lead Ready</div>
+    <div>✔ Modern UI Design</div>
+    <div>✔ Conversion Focused</div>
+    <div>✔ Pixel Setup Support</div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Want A Design Like This?</h2>
+  <p>DM me for landing page, website, ads and digital marketing work.</p>
+
+  <div class="contact-buttons">
+    <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20portfolio%20dekhkar%20kaam%20karwana%20hai" target="_blank" class="main-btn">
+      Contact on WhatsApp
+    </a>
+
+    <a href="mailto:thekartikarya12345@gmail.com" class="outline-btn">
+      Send Email
+    </a>
+  </div>
+</section>
+
+<a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20portfolio%20dekhkar%20kaam%20karwana%20hai" 
+   class="whatsapp-float" 
+   target="_blank">
+  WhatsApp
+</a>
 
 <footer>
   <p>© 2026 Kartik Portfolio. All Rights Reserved.</p>

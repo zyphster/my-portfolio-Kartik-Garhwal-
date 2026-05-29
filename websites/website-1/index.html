@@ -2,13 +2,111 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Website Design 1</title>
-</head>
-<body style="font-family: Arial; text-align: center; padding: 80px; background:#111827; color:white;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <h1>Website Design 1</h1>
-  <p>Yaha tum apni website demo ka full code paste kar sakte ho.</p>
-  <a href="../../index.html" style="color:#38bdf8;">Back To Portfolio</a>
+  <title>Website Design 1</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #111827;
+      color: white;
+    }
+
+    header {
+      padding: 25px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #020617;
+    }
+
+    header h2 span {
+      color: #38bdf8;
+    }
+
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 8%;
+      background:
+        radial-gradient(circle at top, rgba(56, 189, 248, 0.2), transparent 40%),
+        #111827;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #cbd5e1;
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      color: #020617;
+      padding: 15px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 38px;
+      }
+
+      header {
+        flex-direction: column;
+        gap: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Website<span>Demo</span></h2>
+  <a href="../../index.html">Back To Portfolio</a>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Website Design 1</h1>
+
+    <p>
+      Ye tumhara demo website page hai. Yaha tum business website, portfolio website ya client website ka complete code paste kar sakte ho.
+    </p>
+
+    <a href="https://wa.me/916353527607?text=Hi%20Kartik%2C%20mujhe%20business%20website%20banwani%20hai" target="_blank" class="btn">
+      Order Similar Website
+    </a>
+  </div>
+</section>
 
 </body>
 </html>
